@@ -97,4 +97,9 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db
+
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode
