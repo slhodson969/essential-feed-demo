@@ -1,5 +1,7 @@
 # Essential Feed Demo
 
+![](https://github.com/slhodson969/essential-feed-demo/workflows/CI-macOS/badge.svg)
+
 ## Image Feed Feature Specs
 
 ### Story: Customer requests to see their image feed
