@@ -26,7 +26,7 @@ extension LocalFeedLoader: FeedCache {
 
 extension LocalFeedLoader {
     public func load() throws -> [FeedImage] {
-        if let cache = try store.retrieve() {
+        if let cache = try store.retrieve(), FeedCachePolicy.validate(cache.timestamp, against: currentDate()) {
             return cache.feed.toModels()
         }
         return []
