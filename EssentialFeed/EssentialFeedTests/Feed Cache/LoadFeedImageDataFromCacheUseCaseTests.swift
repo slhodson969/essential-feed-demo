@@ -34,6 +34,14 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
         })
     }
     
+    func test_loadImageDataFromURL_deliversNotFoundErrorOnNotFound() {
+        let (sut, store) = makeSUT()
+        
+        expect(sut, toCompleteWith: notFound(), when: {
+            store.completeRetrieval(with: .none)
+        })
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(currentDate: @escaping () -> Date = Date.init, file: StaticString = #filePath, line: UInt = #line) -> (sut: LocalFeedImageDataLoader, store: FeedImageDataStoreSpy) {
@@ -46,6 +54,10 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
     
     private func failed() -> Result<Data, Error> {
         return .failure(LocalFeedImageDataLoader.LoadError.failed)
+    }
+    
+    private func notFound() -> Result<Data, Error> {
+        return .failure(LocalFeedImageDataLoader.LoadError.notFound)
     }
     
     private func expect(_ sut: LocalFeedImageDataLoader, toCompleteWith expectedResult: Result<Data, Error>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
