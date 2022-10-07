@@ -51,6 +51,8 @@
 		D2D7303C28F0664500AFC6D7 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BB7B628EB277800CC1118 /* SharedTestHelpers.swift */; };
 		D2D7303D28F0665300AFC6D7 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274AC4A28EDCAFC0012EAEF /* FeedCacheTestHelpers.swift */; };
 		D2D7303F28F070F100AFC6D7 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7303E28F070F100AFC6D7 /* FeedImageDataStore.swift */; };
+		D2D7304128F0714E00AFC6D7 /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304028F0714E00AFC6D7 /* CoreDataFeedImageDataStoreTests.swift */; };
+		D2D7304328F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304228F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		D2BA8BE728EC755600C09910 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		D2D7303A28F065A400AFC6D7 /* EssentialFeedCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedCacheIntegrationTests.swift; sourceTree = "<group>"; };
 		D2D7303E28F070F100AFC6D7 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
+		D2D7304028F0714E00AFC6D7 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
+		D2D7304228F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,7 @@
 				D274AC4328EDC9F30012EAEF /* Helpers */,
 				D274AC5828EDD93C0012EAEF /* FeedStoreSpecs */,
 				D274AC3E28EDC9530012EAEF /* CacheFeedUseCaseTests.swift */,
+				D2D7304028F0714E00AFC6D7 /* CoreDataFeedImageDataStoreTests.swift */,
 				D274AC5B28EDDA6D0012EAEF /* CoreDataFeedStoreTests.swift */,
 				D274AC4E28EDCD830012EAEF /* LoadFeedFromCacheUseCaseTests.swift */,
 				D274AC5628EDD51D0012EAEF /* ValidateFeedCacheUseCaseTests.swift */,
@@ -302,6 +307,7 @@
 			children = (
 				D274AC6728EDDC940012EAEF /* CoreDataFeedStore.swift */,
 				D274AC6928EDDCFA0012EAEF /* CoreDataFeedStore+FeedStore.swift */,
+				D2D7304228F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift */,
 				D274AC6B28EDDE3F0012EAEF /* CoreDataHelpers.swift */,
 				D274AC5228EDCF8A0012EAEF /* ManagedCache.swift */,
 				D22FA24F28F05BE700810C1C /* ManagedFeedImage.swift */,
@@ -554,6 +560,7 @@
 				D2BA8BC428EC6C3A00C09910 /* FeedImageDataMapper.swift in Sources */,
 				D274AC6A28EDDCFA0012EAEF /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				D274AC5528EDD2770012EAEF /* FeedCachePolicy.swift in Sources */,
+				D2D7304328F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */,
 				D25BB7BC28EB27C600CC1118 /* FeedItemsMapper.swift in Sources */,
 				D274AC4D28EDCB4F0012EAEF /* FeedCache.swift in Sources */,
 				D2BA8BE028EC72B000C09910 /* URLSessionHTTPClient.swift in Sources */,
@@ -577,6 +584,7 @@
 				D25BB7B428EB271500CC1118 /* FeedItemsMapperTests.swift in Sources */,
 				D274AC6228EDDBDC0012EAEF /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				D274AC4B28EDCAFC0012EAEF /* FeedCacheTestHelpers.swift in Sources */,
+				D2D7304128F0714E00AFC6D7 /* CoreDataFeedImageDataStoreTests.swift in Sources */,
 				D2BA8BD828EC71B100C09910 /* URLSessionHTTPClientTests.swift in Sources */,
 				D2BA8BDB28EC720A00C09910 /* URLProtocolStub.swift in Sources */,
 				D2BA8BDD28EC726C00C09910 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
