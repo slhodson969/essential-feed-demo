@@ -30,6 +30,10 @@ extension CoreDataFeedStore: FeedStore {
     }
     
     public func deleteCachedFeed() throws {
-        
+        try performSync { context in
+            Result {
+                try ManagedCache.deleteCache(in: context)
+            }
+        }
     }
 }
