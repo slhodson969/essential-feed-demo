@@ -58,6 +58,7 @@
 		D2D7304928F0737700AFC6D7 /* FeedImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304828F0737700AFC6D7 /* FeedImageDataStoreSpy.swift */; };
 		D2D7304B28F0740900AFC6D7 /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304A28F0740900AFC6D7 /* FeedImageDataCache.swift */; };
 		D2D7304D28F074B000AFC6D7 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304C28F074B000AFC6D7 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
+		D2D7304F28F074FE00AFC6D7 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7304E28F074FE00AFC6D7 /* FeedImageDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		D2D7304828F0737700AFC6D7 /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
 		D2D7304A28F0740900AFC6D7 /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		D2D7304C28F074B000AFC6D7 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		D2D7304E28F074FE00AFC6D7 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				D274AC4C28EDCB4F0012EAEF /* FeedCache.swift */,
 				D25BB7B928EB27B000CC1118 /* FeedImage.swift */,
 				D2D7304A28F0740900AFC6D7 /* FeedImageDataCache.swift */,
+				D2D7304E28F074FE00AFC6D7 /* FeedImageDataLoader.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				D2BA8BE028EC72B000C09910 /* URLSessionHTTPClient.swift in Sources */,
 				D274AC6828EDDC940012EAEF /* CoreDataFeedStore.swift in Sources */,
 				D22FA24E28F05A6800810C1C /* FeedStore.xcdatamodeld in Sources */,
+				D2D7304F28F074FE00AFC6D7 /* FeedImageDataLoader.swift in Sources */,
 				D22FA25028F05BE700810C1C /* ManagedFeedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

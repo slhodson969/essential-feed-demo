@@ -28,3 +28,22 @@ extension LocalFeedImageDataLoader: FeedImageDataCache {
         }
     }
 }
+
+extension LocalFeedImageDataLoader: FeedImageDataLoader {
+    public enum LoadError: Error {
+        case failed
+        case notFound
+    }
+        
+    public func loadImageData(from url: URL) throws -> Data {
+        do {
+            if let imageData = try store.retrieve(dataForURL: url) {
+                return imageData
+            }
+        } catch {
+            throw LoadError.failed
+        }
+        
+        throw LoadError.notFound
+    }
+}
