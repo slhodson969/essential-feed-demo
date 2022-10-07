@@ -14,3 +14,17 @@ public final class LocalFeedImageDataLoader {
         self.store = store
     }
 }
+
+extension LocalFeedImageDataLoader: FeedImageDataCache {
+    public enum SaveError: Error {
+        case failed
+    }
+    
+    public func save(_ data: Data, for url: URL) throws {
+        do {
+            try store.insert(data, for: url)
+        } catch {
+            throw SaveError.failed
+        }
+    }
+}
