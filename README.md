@@ -1,6 +1,6 @@
 # Essential Feed Demo
 
-![](https://github.com/slhodson969/essential-feed-demo/workflows/CI-macOS/badge.svg)
+![](https://github.com/slhodson969/essential-feed-demo/workflows/CI-macOS/badge.svg) ![](https://github.com/slhodson969/essential-feed-demo/workflows/CI-iOS/badge.svg)
 
 ## Image Feed Feature Specs
 
