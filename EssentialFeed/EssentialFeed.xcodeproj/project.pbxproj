@@ -10,6 +10,11 @@
 		D218D9BA28F0642B0085B6A9 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */; };
 		D226883A28F56CF800942613 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */; };
 		D226883B28F56CF800942613 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D226884028F56D5D00942613 /* ListSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226883F28F56D5D00942613 /* ListSnapshotTests.swift */; };
+		D226884528F56DFC00942613 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226884428F56DFC00942613 /* ListViewController.swift */; };
+		D226884728F56E2100942613 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226884628F56E2100942613 /* CellController.swift */; };
+		D226884B28F56E8B00942613 /* EMPTY_LIST_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D226884928F56E8B00942613 /* EMPTY_LIST_dark.png */; };
+		D226884C28F56E8B00942613 /* EMPTY_LIST_light.png in Resources */ = {isa = PBXBuildFile; fileRef = D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */; };
 		D22FA24E28F05A6800810C1C /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D22FA24C28F05A6800810C1C /* FeedStore.xcdatamodeld */; };
 		D22FA25028F05BE700810C1C /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FA24F28F05BE700810C1C /* ManagedFeedImage.swift */; };
 		D25BB7A328EB24EF00CC1118 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */; };
@@ -120,6 +125,11 @@
 
 /* Begin PBXFileReference section */
 		D218D9B628F0642B0085B6A9 /* EssentialFeedCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D226883F28F56D5D00942613 /* ListSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSnapshotTests.swift; sourceTree = "<group>"; };
+		D226884428F56DFC00942613 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D226884628F56E2100942613 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		D226884928F56E8B00942613 /* EMPTY_LIST_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_dark.png; sourceTree = "<group>"; };
+		D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_light.png; sourceTree = "<group>"; };
 		D22FA24D28F05A6800810C1C /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
 		D22FA24F28F05BE700810C1C /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
 		D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +248,41 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D226884128F56D6300942613 /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				D226884828F56E8B00942613 /* snapshots */,
+				D226883F28F56D5D00942613 /* ListSnapshotTests.swift */,
+			);
+			path = "Shared UI";
+			sourceTree = "<group>";
+		};
+		D226884228F56DE000942613 /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				D226884328F56DEB00942613 /* Controllers */,
+			);
+			path = "Shared UI";
+			sourceTree = "<group>";
+		};
+		D226884328F56DEB00942613 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D226884628F56E2100942613 /* CellController.swift */,
+				D226884428F56DFC00942613 /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D226884828F56E8B00942613 /* snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				D226884928F56E8B00942613 /* EMPTY_LIST_dark.png */,
+				D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */,
+			);
+			path = snapshots;
 			sourceTree = "<group>";
 		};
 		D25BB79028EB24EF00CC1118 = {
@@ -423,6 +468,7 @@
 		D2B0C4A928F1761F0022ECC0 /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				D226884228F56DE000942613 /* Shared UI */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -431,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				D2A83C5128F4622900952442 /* Helpers */,
+				D226884128F56D6300942613 /* Shared UI */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -629,6 +676,7 @@
 					};
 					D2B0C4A728F1761F0022ECC0 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					D2B0C4AE28F1761F0022ECC0 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -695,6 +743,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D226884C28F56E8B00942613 /* EMPTY_LIST_light.png in Resources */,
+				D226884B28F56E8B00942613 /* EMPTY_LIST_dark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +830,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D226884528F56DFC00942613 /* ListViewController.swift in Sources */,
+				D226884728F56E2100942613 /* CellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +840,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A83C5528F4628300952442 /* XCTestCase+Snapshot.swift in Sources */,
+				D226884028F56D5D00942613 /* ListSnapshotTests.swift in Sources */,
 				D2A83C5328F4623E00952442 /* UIViewController+Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1118,6 +1171,7 @@
 		D2B0C4B828F176200022ECC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1143,6 +1197,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1151,6 +1206,7 @@
 		D2B0C4B928F176200022ECC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1185,6 +1241,7 @@
 		D2B0C4BB28F176200022ECC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1213,6 +1270,7 @@
 		D2B0C4BC28F176200022ECC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
