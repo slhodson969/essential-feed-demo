@@ -56,6 +56,7 @@
 		D29FFADC28F597E700AF6FF7 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FFADB28F597E700AF6FF7 /* UIView+Container.swift */; };
 		D29FFAEA28F59F7500AF6FF7 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FFAE928F59F7500AF6FF7 /* LoadResourcePresenterTests.swift */; };
 		D29FFAED28F59FB700AF6FF7 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FFAEC28F59FB700AF6FF7 /* LoadResourcePresenter.swift */; };
+		D29FFAF028F5A35100AF6FF7 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = D29FFAF228F5A35100AF6FF7 /* Shared.strings */; };
 		D2A83C5328F4623E00952442 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A83C5228F4623E00952442 /* UIViewController+Snapshot.swift */; };
 		D2A83C5528F4628300952442 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A83C5428F4628300952442 /* XCTestCase+Snapshot.swift */; };
 		D2B0C4B028F1761F0022ECC0 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B0C4A828F1761F0022ECC0 /* EssentialFeediOS.framework */; };
@@ -185,6 +186,7 @@
 		D29FFADB28F597E700AF6FF7 /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		D29FFAE928F59F7500AF6FF7 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		D29FFAEC28F59FB700AF6FF7 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		D29FFAF128F5A35100AF6FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
 		D2A83C5228F4623E00952442 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
 		D2A83C5428F4628300952442 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 		D2B0C4A828F1761F0022ECC0 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +334,7 @@
 				D226885328F56FE500942613 /* ResourceErrorViewModel.swift */,
 				D226885528F56FFD00942613 /* ResourceLoadingView.swift */,
 				D226885128F56FCE00942613 /* ResourceLoadingViewModel.swift */,
+				D29FFAF228F5A35100AF6FF7 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -793,6 +796,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29FFAF028F5A35100AF6FF7 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +971,17 @@
 			targetProxy = D2BA8BEA28EC755600C09910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D29FFAF228F5A35100AF6FF7 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D29FFAF128F5A35100AF6FF7 /* en */,
+			);
+			name = Shared.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D218D9BD28F0642B0085B6A9 /* Debug */ = {
