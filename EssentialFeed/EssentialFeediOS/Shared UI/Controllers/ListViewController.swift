@@ -17,6 +17,8 @@ public final class ListViewController: UITableViewController, ResourceLoadingVie
         }
     }()
     
+    public var onRefresh: (() -> Void)?
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +26,7 @@ public final class ListViewController: UITableViewController, ResourceLoadingVie
     }
     
     private func configureTableView() {
+        tableView.dataSource = dataSource
         tableView.tableHeaderView = errorView.makeContainer()
     }
     
@@ -33,8 +36,18 @@ public final class ListViewController: UITableViewController, ResourceLoadingVie
         tableView.sizeTableHeaderToFit()
     }
     
+    @IBAction private func refresh() {
+        onRefresh?()
+    }
+    
     public func display(_ sections: [CellController]...) {
+        var snapshot = NSDiffableDataSourceSnapshot<Int, CellController>()
+        sections.enumerated().forEach { section, cellControllers in
+            snapshot.appendSections([section])
+            snapshot.appendItems(cellControllers, toSection: section)
+        }
         
+        dataSource.applySnapshotUsingReloadData(snapshot)
     }
     
     public func display(_ viewModel: ResourceLoadingViewModel) {

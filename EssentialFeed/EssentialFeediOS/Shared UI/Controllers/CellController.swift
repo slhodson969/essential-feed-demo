@@ -10,6 +10,11 @@ import UIKit
 public struct CellController {
     let id: AnyHashable
     let dataSource: UITableViewDataSource
+    
+    public init(id: AnyHashable, _ dataSource: UITableViewDataSource) {
+        self.id = id
+        self.dataSource = dataSource
+    }
 }
 
 extension CellController: Equatable {
