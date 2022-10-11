@@ -72,6 +72,8 @@
 		D29FFB1728F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D29FFB1428F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */; };
 		D29FFB1828F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light.png in Resources */ = {isa = PBXBuildFile; fileRef = D29FFB1528F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light.png */; };
 		D29FFB1E28F5ACDA00AF6FF7 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FFB1D28F5ACDA00AF6FF7 /* UITableView+Dequeueing.swift */; };
+		D29FFB2128F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D29FFB1F28F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */; };
+		D29FFB2228F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */ = {isa = PBXBuildFile; fileRef = D29FFB2028F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */; };
 		D2A83C5328F4623E00952442 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A83C5228F4623E00952442 /* UIViewController+Snapshot.swift */; };
 		D2A83C5528F4628300952442 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A83C5428F4628300952442 /* XCTestCase+Snapshot.swift */; };
 		D2B0C4B028F1761F0022ECC0 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B0C4A828F1761F0022ECC0 /* EssentialFeediOS.framework */; };
@@ -220,6 +222,8 @@
 		D29FFB1428F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		D29FFB1528F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light.png; sourceTree = "<group>"; };
 		D29FFB1D28F5ACDA00AF6FF7 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
+		D29FFB1F28F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_dark.png; sourceTree = "<group>"; };
+		D29FFB2028F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_light.png; sourceTree = "<group>"; };
 		D2A83C5228F4623E00952442 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
 		D2A83C5428F4628300952442 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 		D2B0C4A828F1761F0022ECC0 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -627,6 +631,8 @@
 				D29FFB1328F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_dark.png */,
 				D29FFB1428F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */,
 				D29FFB1528F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light.png */,
+				D29FFB1F28F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */,
+				D29FFB2028F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */,
 			);
 			path = snapshots;
 			sourceTree = "<group>";
@@ -930,8 +936,10 @@
 				D226884C28F56E8B00942613 /* EMPTY_LIST_light.png in Resources */,
 				D29FFB1628F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_dark.png in Resources */,
 				D29FFB1728F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */,
+				D29FFB2128F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */,
 				D226886028F570C600942613 /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */,
 				D226885F28F570C600942613 /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */,
+				D29FFB2228F5AF0100AF6FF7 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */,
 				D226886128F570C600942613 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */,
 				D29FFB1828F5AC4E00AF6FF7 /* FEED_WITH_CONTENT_light.png in Resources */,
 				D226884B28F56E8B00942613 /* EMPTY_LIST_dark.png in Resources */,

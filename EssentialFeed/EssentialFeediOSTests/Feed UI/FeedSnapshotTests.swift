@@ -21,6 +21,15 @@ class FeedSnapshotTests: XCTestCase {
         assert(snapshot: sut.snapshot(for: .iPhone14(style: .light, contentSize: .extraExtraExtraLarge)), named: "FEED_WITH_CONTENT_light_extraExtraExtraLarge")
     }
     
+    func test_feedWithFailedImageLoading() {
+        let sut = makeSUT()
+        
+        sut.display(feedWithFailedImageLoading())
+        
+        assert(snapshot: sut.snapshot(for: .iPhone14(style: .light)), named: "FEED_WITH_FAILED_IMAGE_LOADING_light")
+        assert(snapshot: sut.snapshot(for: .iPhone14(style: .dark)), named: "FEED_WITH_FAILED_IMAGE_LOADING_dark")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT() -> ListViewController {
@@ -44,6 +53,21 @@ class FeedSnapshotTests: XCTestCase {
                 description: "Garth Pier is a Grade II listed structure in Bangor, Gwynedd, North Wales.",
                 location: "Garth Pier",
                 image: UIImage.make(withColor: .green)
+            )
+        ]
+    }
+    
+    private func feedWithFailedImageLoading() -> [ImageStub] {
+        return [
+            ImageStub(
+                description: nil,
+                location: "Cannon Street, London",
+                image: nil
+            ),
+            ImageStub(
+                description: nil,
+                location: "Brighton Seafront",
+                image: nil
             )
         ]
     }
