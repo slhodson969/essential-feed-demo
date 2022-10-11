@@ -14,5 +14,16 @@ public protocol ResourceView {
 }
 
 public final class LoadResourcePresenter<Resource, View: ResourceView> {
-    public init() {}
+    private let loadingView: ResourceLoadingView
+    private let errorView: ResourceErrorView
+    
+    public init(loadingView: ResourceLoadingView, errorView: ResourceErrorView) {
+        self.loadingView = loadingView
+        self.errorView = errorView
+    }
+    
+    public func didStartLoading() {
+        errorView.display(.noError)
+        loadingView.display(ResourceLoadingViewModel(isLoading: true))
+    }
 }
