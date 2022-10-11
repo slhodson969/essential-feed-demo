@@ -113,6 +113,7 @@
 		D2F7A13A28F5BCB700146C90 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F7A13C28F5BCB700146C90 /* Feed.strings */; };
 		D2F7A14128F5BD4F00146C90 /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7A14028F5BD4F00146C90 /* FeedImagePresenterTests.swift */; };
 		D2F7A14328F5BD7400146C90 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7A14228F5BD7400146C90 /* FeedImagePresenter.swift */; };
+		D2F7A14C28F5BF3000146C90 /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7A14B28F5BF3000146C90 /* Paginated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +277,7 @@
 		D2F7A13F28F5BCC100146C90 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Feed.strings; sourceTree = "<group>"; };
 		D2F7A14028F5BD4F00146C90 /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
 		D2F7A14228F5BD7400146C90 /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
+		D2F7A14B28F5BF3000146C90 /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -710,6 +712,7 @@
 			isa = PBXGroup;
 			children = (
 				D2BA8BD428EC713100C09910 /* HTTPClient.swift */,
+				D2F7A14B28F5BF3000146C90 /* Paginated.swift */,
 			);
 			path = "Shared API";
 			sourceTree = "<group>";
@@ -1049,6 +1052,7 @@
 				D274AC5528EDD2770012EAEF /* FeedCachePolicy.swift in Sources */,
 				D2D7304328F071E200AFC6D7 /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */,
 				D29FFAED28F59FB700AF6FF7 /* LoadResourcePresenter.swift in Sources */,
+				D2F7A14C28F5BF3000146C90 /* Paginated.swift in Sources */,
 				D25BB7BC28EB27C600CC1118 /* FeedItemsMapper.swift in Sources */,
 				D274AC4D28EDCB4F0012EAEF /* FeedCache.swift in Sources */,
 				D2BA8BE028EC72B000C09910 /* URLSessionHTTPClient.swift in Sources */,
