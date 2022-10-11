@@ -15,6 +15,7 @@
 		D226884728F56E2100942613 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226884628F56E2100942613 /* CellController.swift */; };
 		D226884B28F56E8B00942613 /* EMPTY_LIST_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D226884928F56E8B00942613 /* EMPTY_LIST_dark.png */; };
 		D226884C28F56E8B00942613 /* EMPTY_LIST_light.png in Resources */ = {isa = PBXBuildFile; fileRef = D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */; };
+		D226884F28F56F5200942613 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226884E28F56F5200942613 /* ErrorView.swift */; };
 		D22FA24E28F05A6800810C1C /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D22FA24C28F05A6800810C1C /* FeedStore.xcdatamodeld */; };
 		D22FA25028F05BE700810C1C /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FA24F28F05BE700810C1C /* ManagedFeedImage.swift */; };
 		D25BB7A328EB24EF00CC1118 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */; };
@@ -130,6 +131,7 @@
 		D226884628F56E2100942613 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		D226884928F56E8B00942613 /* EMPTY_LIST_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_dark.png; sourceTree = "<group>"; };
 		D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_light.png; sourceTree = "<group>"; };
+		D226884E28F56F5200942613 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		D22FA24D28F05A6800810C1C /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
 		D22FA24F28F05BE700810C1C /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
 		D25BB79A28EB24EF00CC1118 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				D226884328F56DEB00942613 /* Controllers */,
+				D226884D28F56F4700942613 /* Views */,
 			);
 			path = "Shared UI";
 			sourceTree = "<group>";
@@ -283,6 +286,14 @@
 				D226884A28F56E8B00942613 /* EMPTY_LIST_light.png */,
 			);
 			path = snapshots;
+			sourceTree = "<group>";
+		};
+		D226884D28F56F4700942613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D226884E28F56F5200942613 /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D25BB79028EB24EF00CC1118 = {
@@ -831,6 +842,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D226884528F56DFC00942613 /* ListViewController.swift in Sources */,
+				D226884F28F56F5200942613 /* ErrorView.swift in Sources */,
 				D226884728F56E2100942613 /* CellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
