@@ -9,6 +9,12 @@ import UIKit
 import EssentialFeediOS
 
 extension ListViewController {
+    func simulateUserInitiatedReload() {
+        refreshControl?.simulatePullToRefresh()
+    }
+}
+
+extension ListViewController {
     
     func simulateTapOnFeedImage(at row: Int) {
         let delegate = tableView.delegate
