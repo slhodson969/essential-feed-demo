@@ -12,7 +12,7 @@ import EssentialFeed
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-
+    
     private lazy var scheduler: AnyDispatchQueueScheduler = DispatchQueue(
         label: "com.essentialdeveloper.infra.queue",
         qos: .userInitiated,
@@ -46,6 +46,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             feedLoader: makeRemoteFeedLoaderWithLocalFallback,
             imageLoader: makeLocalImageLoaderWithRemoteFallback,
             selection: showComments))
+    
+    convenience init(httpClient: HTTPClient, store: FeedStore & FeedImageDataStore, scheduler: AnyDispatchQueueScheduler) {
+        self.init()
+        self.httpClient = httpClient
+        self.store = store
+        self.scheduler = scheduler
+    }
+    
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(windowScene: scene)
+        configureWindow()
+    }
     
     func configureWindow() {
         window?.rootViewController = navigationController
