@@ -33,7 +33,9 @@ extension FeedUIIntegrationTests {
         }
         
         func completeFeedLoading(with feed: [FeedImage] = [], at index: Int = 0) {
-            feedRequests[index].send(Paginated(items: feed))
+            feedRequests[index].send(Paginated(items: feed, loadMorePublisher: { [weak self] in
+                self?.loadMorePublisher() ?? Empty().eraseToAnyPublisher()
+            }))
             feedRequests[index].send(completion: .finished)
         }
         
@@ -52,7 +54,11 @@ extension FeedUIIntegrationTests {
         }
         
         func completeLoadMore(with feed: [FeedImage] = [], lastPage: Bool = false, at index: Int = 0) {
-            loadMoreRequests[index].send(Paginated(items: feed))
+            loadMoreRequests[index].send(Paginated(
+                                            items: feed,
+                                            loadMorePublisher: lastPage ? nil : { [weak self] in
+                                                self?.loadMorePublisher() ?? Empty().eraseToAnyPublisher()
+                                            }))
         }
         
         func completeLoadMoreWithError(at index: Int = 0) {
