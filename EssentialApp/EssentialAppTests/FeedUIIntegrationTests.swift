@@ -216,6 +216,20 @@ class FeedUIIntegrationTests: XCTestCase {
         XCTAssertFalse(sut.isShowingLoadMoreFeedIndicator, "Expected no loading indicator once user initiated loading completes with error")
     }
     
+    func test_loadMoreCompletion_dispatchesFromBackgroundToMainThread() {
+        let (sut, loader) = makeSUT()
+        sut.loadViewIfNeeded()
+        loader.completeFeedLoading(at: 0)
+        sut.simulateLoadMoreFeedAction()
+        
+        let exp = expectation(description: "Wait for background queue")
+        DispatchQueue.global().async {
+            loader.completeLoadMore()
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1.0)
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(
