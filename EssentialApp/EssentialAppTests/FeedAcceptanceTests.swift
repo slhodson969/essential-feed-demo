@@ -54,6 +54,12 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 2), makeImageData2())
     }
     
+    func test_onLaunch_displaysEmptyFeedWhenCustomerHasNoConnectivityAndNoCache() {
+        let feed = launch(httpClient: .offline, store: .empty)
+        
+        XCTAssertEqual(feed.numberOfRenderedFeedImageViews(), 0)
+    }
+    
     // MARK: - Helpers
     
     private func launch(
