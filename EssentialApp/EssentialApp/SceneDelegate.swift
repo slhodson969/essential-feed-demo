@@ -66,6 +66,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
     }
     
+    func sceneWillResignActive(_ scene: UIScene) {
+        do {
+            try localFeedLoader.validateCache()
+        } catch {
+            
+        }
+    }
+    
     private func showComments(for image: FeedImage) {
         
     }
