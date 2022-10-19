@@ -23,3 +23,7 @@ private class DummyView: ResourceView {
 var loadError: String {
     LoadResourcePresenter<Any, DummyView>.loadError
 }
+
+var commentsTitle: String {
+    ImageCommentsPresenter.title
+}
